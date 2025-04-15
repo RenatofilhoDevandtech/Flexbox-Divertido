@@ -1,0 +1,160 @@
+/* Estilos Básicos */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define uma fonte moderna e elegante para o texto. */
+    margin: 0; /* Remove margens padrão do navegador. */
+    padding: 0; /* Remove espaçamento interno padrão do navegador. */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Fundo com gradiente futurista, criando uma transição suave de tons escuros. */
+    color: #ffffff; /* Define o texto como branco para contraste com o fundo escuro. */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas para melhor legibilidade. */
+}
+
+header {
+    text-align: center; /* Centraliza o conteúdo do cabeçalho horizontalmente. */
+    padding: 20px; /* Adiciona espaço interno ao redor do texto. */
+    background: linear-gradient(to right, #075dbe, #25bffc); /* Cria um fundo gradiente horizontal com tons vibrantes de azul. */
+    color: white; /* Texto branco para bom contraste com o fundo. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao cabeçalho para criar profundidade. */
+    border-bottom: 5px solid #2575fc; /* Adiciona uma borda inferior azul para destacar o cabeçalho. */
+    font-size: 2rem; /* Define o tamanho grande da fonte para destacar o título. */
+}
+
+main {
+    padding: 20px; /* Adiciona espaçamento interno ao conteúdo principal da página. */
+}
+
+section {
+    margin-bottom: 30px; /* Adiciona espaço externo abaixo de cada seção. */
+    background: rgba(255, 255, 255, 0.1); /* Cria um fundo translúcido que realça o conteúdo sem cobrir totalmente o fundo principal. */
+    border-radius: 15px; /* Bordas arredondadas para um visual moderno e amigável. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para criar um efeito de profundidade. */
+    padding: 15px; /* Espaçamento interno dentro da seção. */
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto do título da seção. */
+    color: #00d4ff; /* Utiliza um tom azul vibrante para destacar os títulos. */
+    margin-bottom: 10px; /* Adiciona espaço entre o título e o conteúdo abaixo. */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas. */
+    font-size: 1.7rem; /* Define um tamanho maior da fonte para dar destaque. */
+}
+
+p {
+    font-size: 1rem; /* Define o tamanho padrão da fonte para parágrafos. */
+    color: #bbbbbb; /* Utiliza um cinza claro para um visual futurista e suave. */
+    margin-bottom: 15px; /* Adiciona espaço entre o parágrafo e o próximo elemento. */
+}
+
+/* Estilos do Contêiner */
+.container {
+    display: flex; /* Ativa o modelo de layout Flexbox para organizar os itens. */
+    gap: 20px; /* Define um espaçamento uniforme entre os itens dentro do contêiner. */
+    padding: 15px; /* Adiciona espaçamento interno ao redor do conteúdo. */
+    border-radius: 15px; /* Bordas arredondadas para suavizar o visual do contêiner. */
+    align-items: center; /* Centraliza verticalmente os itens no eixo transversal. */
+    margin-bottom: 25px; /* Adiciona espaço externo abaixo de cada contêiner. */
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro translúcido para destacar os itens dentro do contêiner. */
+    border: 3px solid #00d4ff; /* Adiciona uma borda azul brilhante ao redor do contêiner. */
+    animation: fadeIn 1s ease-in; /* Aplica um efeito de entrada suave para o contêiner. */
+}
+
+/* Propriedades de Justify Content */
+.justify-flex-start {
+    justify-content: flex-start; /* Alinha os itens à esquerda do contêiner. */
+}
+
+.justify-flex-end {
+    justify-content: flex-end; /* Alinha os itens à direita do contêiner. */
+}
+
+.justify-center {
+    justify-content: center; /* Centraliza horizontalmente os itens no contêiner. */
+}
+
+.space-around {
+    justify-content: space-around; /* Adiciona espaço ao redor de cada item no contêiner. */
+}
+
+.space-between {
+    justify-content: space-between; /* Adiciona espaço apenas entre os itens, sem incluir as bordas externas. */
+}
+
+.space-evenly {
+    justify-content: space-evenly; /* Distribui espaço igual entre os itens e as bordas externas do contêiner. */
+}
+
+/* Propriedades de Align Items */
+.align-flex-start {
+    align-items: flex-start; /* Alinha os itens na parte superior do contêiner. */
+    height: 150px; /* Define a altura para visualizar o alinhamento vertical. */
+}
+
+.align-flex-end {
+    align-items: flex-end; /* Alinha os itens na parte inferior do contêiner. */
+    height: 150px; /* Define a altura para verificar o alinhamento vertical. */
+}
+
+.align-center {
+    align-items: center; /* Centraliza verticalmente os itens no contêiner. */
+    height: 150px; /* Define a altura para destacar o alinhamento vertical. */
+}
+
+/* Estilo das Caixas */
+.box {
+    width: 90px; /* Define a largura das caixas. */
+    height: 90px; /* Define a altura das caixas. */
+    background: radial-gradient(circle, #00d4ff, #094194); /* Fundo com gradiente circular futurista. */
+    color: #ffffff; /* Define o texto como branco para contraste com o fundo. */
+    display: flex; /* Ativa o Flexbox dentro das caixas para alinhar o conteúdo. */
+    justify-content: center; /* Centraliza horizontalmente o texto dentro da caixa. */
+    align-items: center; /* Centraliza verticalmente o texto dentro da caixa. */
+    font-size: 1.1rem; /* Define o tamanho da fonte do texto. */
+    font-weight: bold; /* Deixa o texto em negrito para destaque. */
+    border-radius: 50%; /* Torna as caixas circulares. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra para criar profundidade visual. */
+    transition: transform 0.4s ease, background-color 0.4s ease; /* Suaviza os efeitos de interação. */
+    cursor: pointer; /* Indica que as caixas são interativas. */
+}
+
+/* Interatividade com Hover */
+.box:hover {
+    transform: scale(1.2); /* Amplia a caixa em 20% ao passar o mouse. */
+    background: linear-gradient(to right, #11cbbb, #2575fc); /* Adiciona um gradiente dinâmico ao fundo no hover. */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Cria um realce maior na sombra durante o hover. */
+    color: #e3ffb3; /* Altera a cor do texto para verde claro durante o hover. */
+}
+
+/* Ajuste de Altura para Caixas Específicas */
+.tall-box {
+    height: 120px; /* Define uma altura maior para caixas específicas. */
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Começa invisível. */
+    }
+    100% {
+        opacity: 1; /* Gradualmente se torna visível. */
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Reorganiza os itens verticalmente em telas menores. */
+    }
+
+    .box {
+        width: 70px; /* Reduz a largura das caixas para telas menores. */
+        height: 70px; /* Reduz a altura das caixas proporcionalmente. */
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para telas menores. */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 50px; /* Ajusta a largura das caixas para dispositivos muito pequenos. */
+        height: 50px; /* Ajusta a altura das caixas proporcionalmente. */
+        font-size: 0.8rem; /* Define um tamanho menor para o texto em telas pequenas. */
+    }
+}

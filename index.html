@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados básicos -->
+    <meta charset="UTF-8"> <!-- Define a codificação como UTF-8 para suportar caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que o site seja responsivo em diferentes dispositivos. -->
+    <title>Aprendendo Flexbox</title> <!-- Título da página que aparece na aba do navegador. -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles.css"> <!-- Conecta o arquivo CSS externo para estilizar o HTML. -->
+</head>
+<body>
+    <!-- Cabeçalho principal da página -->
+    <header>
+        <h1>Exemplo Visual: Flexbox</h1> <!-- Título principal da página -->
+        <p>Aprenda como organizar caixas com diferentes propriedades do Flexbox.</p> <!-- Descrição para contextualizar o aprendizado. -->
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Primeira seção: Justify Content -->
+        <section>
+            <h2>Justify Content</h2> <!-- Título da seção -->
+            <p>Controla como as caixas se alinham horizontalmente dentro do contêiner.</p>
+            <!-- Justify Content: flex-start -->
+            <div class="container justify-flex-start">
+                <div class="box"><i class="fas fa-arrow-left"></i> Start</div>
+                <div class="box"><i class="fas fa-heart"></i> Start</div>
+                <div class="box"><i class="fas fa-smile"></i> Start</div>
+            </div>
+
+            <!-- Justify Content: flex-end -->
+            <div class="container justify-flex-end">
+                <div class="box"><i class="fas fa-arrow-right"></i> End</div>
+                <div class="box"><i class="fas fa-star"></i> End</div>
+                <div class="box"><i class="fas fa-thumbs-up"></i> End</div>
+            </div>
+
+            <!-- Justify Content: center -->
+            <div class="container justify-center">
+                <div class="box"><i class="fas fa-circle"></i> Center</div>
+                <div class="box"><i class="fas fa-square"></i> Center</div>
+                <div class="box"><i class="fas fa-heart"></i> Center</div>
+            </div>
+
+            <!-- Justify Content: space-around -->
+            <div class="container space-around">
+                <div class="box"><i class="fas fa-cloud"></i> Space Around</div>
+                <div class="box"><i class="fas fa-feather"></i> Space Around</div>
+                <div class="box"><i class="fas fa-flower"></i> Space Around</div>
+            </div>
+
+            <!-- Justify Content: space-between -->
+            <div class="container space-between">
+                <div class="box"><i class="fas fa-car"></i> Space Between</div>
+                <div class="box"><i class="fas fa-candy-cane"></i> Space Between</div>
+                <div class="box"><i class="fas fa-gift"></i> Space Between</div>
+            </div>
+
+            <!-- Justify Content: space-evenly -->
+            <div class="container space-evenly">
+                <div class="box"><i class="fas fa-lemon"></i> Space Evenly</div>
+                <div class="box"><i class="fas fa-ice-cream"></i> Space Evenly</div>
+                <div class="box"><i class="fas fa-mug-hot"></i> Space Evenly</div>
+            </div>
+        </section>
+
+        <!-- Segunda seção: Align Items -->
+        <section>
+            <h2>Align Items</h2>
+            <p>Controla como as caixas se alinham verticalmente no contêiner.</p>
+            <!-- Align Items: flex-start -->
+            <div class="container align-flex-start">
+                <div class="box tall-box"><i class="fas fa-cloud-sun"></i> Start</div>
+                <div class="box tall-box"><i class="fas fa-rainbow"></i> Start</div>
+                <div class="box tall-box"><i class="fas fa-umbrella-beach"></i> Start</div>
+            </div>
+
+            <!-- Align Items: flex-end -->
+            <div class="container align-flex-end">
+                <div class="box tall-box"><i class="fas fa-moon"></i> End</div>
+                <div class="box tall-box"><i class="fas fa-star"></i> End</div>
+                <div class="box tall-box"><i class="fas fa-cloud-moon"></i> End</div>
+            </div>
+
+            <!-- Align Items: center -->
+            <div class="container align-center">
+                <div class="box tall-box"><i class="fas fa-music"></i> Center</div>
+                <div class="box tall-box"><i class="fas fa-tv"></i> Center</div>
+                <div class="box tall-box"><i class="fas fa-film"></i> Center</div>
+            </div>
+        </section>
+
+        <!-- Terceira seção: Flex Wrap -->
+        <section>
+            <h2>Flex Wrap</h2>
+            <p>Permite que as caixas "quebrem" para novas linhas quando o espaço acaba.</p>
+            <div class="container flex-wrap">
+                <div class="box"><i class="fas fa-utensils"></i> 1</div>
+                <div class="box"><i class="fas fa-wine-glass-alt"></i> 2</div>
+                <div class="box"><i class="fas fa-pizza-slice"></i> 3</div>
+                <div class="box"><i class="fas fa-cake"></i> 4</div>
+                <div class="box"><i class="fas fa-popcorn"></i> 5</div>
+                <div class="box"><i class="fas fa-cookie-bite"></i> 6</div>
+            </div>
+        </section>
+
+        <!-- Quarta seção: Flex Direction -->
+        <section>
+            <h2>Flex Direction</h2>
+            <p>Define a direção em que as caixas são organizadas.</p>
+            <!-- Flex Direction: row -->
+            <div class="container flex-row">
+                <div class="box"><i class="fas fa-arrow-right"></i> Row</div>
+                <div class="box"><i class="fas fa-arrow-right"></i> Row</div>
+                <div class="box"><i class="fas fa-arrow-right"></i> Row</div>
+            </div>
+
+            <!-- Flex Direction: column -->
+            <div class="container flex-column">
+                <div class="box"><i class="fas fa-arrow-down"></i> Column</div>
+                <div class="box"><i class="fas fa-arrow-down"></i> Column</div>
+                <div class="box"><i class="fas fa-arrow-down"></i> Column</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Aprendendo Flexbox. Criado para ensino e diversão.</p>
+    </footer>
+</body>
+</html>
+<!-- Fim do arquivo HTML -->
